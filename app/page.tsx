@@ -1,19 +1,14 @@
-"use client"
+'use client'
 
+import { useThemeContext } from './context/ThemeContext'
 import Switch from './components/Switch'
 import styles from './page.module.scss'
 
-import { useState } from 'react'
-
 export default function Home() {
-  const [theme, setTheme] = useState('light')
+  const { theme, setTheme } = useThemeContext()
 
   const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark')
-    } else {
-      setTheme('light')
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   return (

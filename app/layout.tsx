@@ -2,6 +2,7 @@ import './style/reset.style.scss'
 import './style/global.style.scss'
 import './style/theme.style.scss'
 import type { Metadata } from 'next'
+import ThemeProvider from './context/ThemeContext'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +16,9 @@ type AppProps = {
 export default function RootLayout({ children }: AppProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   )
 }
