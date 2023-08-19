@@ -1,3 +1,4 @@
+import './style/reset.style.scss'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
