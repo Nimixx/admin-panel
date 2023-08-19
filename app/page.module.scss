@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.dark {
+  background-color: var(--background-dark);
+  color: var(--color-light);
+}
