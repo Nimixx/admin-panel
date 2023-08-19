@@ -1,5 +1,4 @@
 import './style/reset.style.scss'
-import './style/global.style.scss'
 import './style/theme.style.scss'
 import type { Metadata } from 'next'
 import ThemeProvider from './context/ThemeContext'
