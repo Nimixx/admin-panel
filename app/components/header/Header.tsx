@@ -3,7 +3,7 @@
 import styles from './header.module.scss'
 import { useThemeContext } from '@/app/context/ThemeContext'
 
-import Menu from './menu/Menu'
+import SideBar from './sideBar/SideBar'
 import UserMenu from './user/UserMenu'
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header data-theme={theme} className={styles.header}>
-      <Menu />
+      <SideBar />
       <UserMenu />
     </header>
   )

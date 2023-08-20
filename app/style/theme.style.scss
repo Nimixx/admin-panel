@@ -1,25 +1,33 @@
 // styles/theme.scss
 :root {
+    //global
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
     // Light Theme Colors
     --primary-color-light: #2589e6;
     --color-light: #161616;
     --background-light: #fff;
+    --background-light-secondary: #f5f5f5;
+
 
     // Dark Theme Colors
     --primary-color-dark: #ff6b6b;
     --color-dark: #fff;
     --background-dark: #1f1c30;
+    --background-dark-secondary: #463d7e;
   }
   
   [data-theme='light'] {
     --primary-color: var(--primary-color-light);
     --color: var(--color-light);
     --background: var(--background-light);
+    --background-secondary: var(--background-light-secondary);
   }
   
   [data-theme='dark'] {
     --primary-color: var(--primary-color-dark);
     --color: var(--color-dark);
     --background: var(--background-dark);
+    --background-secondary: var(--background-dark-secondary);
   }
   

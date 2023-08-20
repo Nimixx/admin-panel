@@ -1,11 +1,11 @@
 import styles from './menu.module.scss'
-import { Icon } from '@iconify/react'
+import { Menu} from 'lucide-react'
 
 
-export default function Menu() {
+export default function SideBar() {
   return (
     <section className={styles.container}>
-      <Icon icon="ep:menu" />
+      <Menu/>
       <p>Dashboard</p>
     </section>
   )
