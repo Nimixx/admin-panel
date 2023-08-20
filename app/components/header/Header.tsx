@@ -5,6 +5,7 @@ import { useThemeContext } from '@/app/context/ThemeContext'
 
 import SideBar from './sideBar/SideBar'
 import UserMenu from './user/UserMenu'
+import ThemeSwitch from './themeSwitch/ThemeSwitch'
 
 export default function Header() {
   const { theme } = useThemeContext()
@@ -12,7 +13,10 @@ export default function Header() {
   return (
     <header data-theme={theme} className={styles.header}>
       <SideBar />
-      <UserMenu />
+      <section className={styles.user__wrapper}>
+        <ThemeSwitch />
+        <UserMenu />
+      </section>
     </header>
   )
 }

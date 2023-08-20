@@ -1,0 +1,55 @@
+@use '../../../style/mixins.style.scss' as *;
+
+.profile__btn {
+  @include flexBox(row, center, center);
+  cursor: pointer;
+}
+
+.content {
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  will-change: transform, opacity;
+  animation: slideDownAndFade 250ms ease;
+}
+
+.radio__item {
+  font-size: 13px;
+  line-height: 1;
+  color: var(--color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 5px;
+  position: relative;
+  padding-left: 25px;
+  user-select: none;
+  outline: none;
+}
+
+.indicator {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 1.5rem;
+  fill: var(--background-secondary);
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

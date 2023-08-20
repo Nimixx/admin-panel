@@ -8,3 +8,7 @@
   background-color: var(--background);
   color: var(--color);
 }
+
+.user__wrapper {
+  @include flexBox(row, center, center, 2rem);
+}
