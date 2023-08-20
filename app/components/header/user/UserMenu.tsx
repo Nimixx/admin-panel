@@ -1,10 +1,10 @@
 'use client'
 
+import React, { useState, useEffect } from 'react'
 import styles from './userMenu.module.scss'
 import { ChevronDown } from 'lucide-react'
-
-import { useState } from 'react'
 import Navigation from './navigation/Navigation'
+import { useEscapeKey } from '../../hooks/useEscapeKey'
 
 export default function UserMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,6 +12,8 @@ export default function UserMenu() {
   const toggleMenu = () => {
     setIsOpen((prevState) => !prevState)
   }
+
+  useEscapeKey({ enabled: isOpen, onClose: toggleMenu });
 
   return (
     <section className={styles.container}>
