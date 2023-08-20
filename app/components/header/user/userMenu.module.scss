@@ -6,26 +6,73 @@
 
 .profile__btn {
   @include flexBox(row, center, center);
+  cursor: pointer;
 }
 
 .avatar {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  margin-right: 1rem;
 }
 
 .arrow {
-  color: var(--color);
   width: 1.5rem;
-  height: 1.5rem;
-  transition: transform 250ms ease;
+  fill: var(--background-secondary);
 }
 
-.arrow__close {
-  transform: rotate(0deg);
+.content {
+  min-width: 15rem;
+  min-height: 20rem;
+  padding-bottom: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  will-change: transform, opacity;
+  animation: slideDownAndFade 250ms ease;
 }
 
-.arrow__open {
-  transform: rotate(180deg);
+// Profile menu
+
+.userName {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.label {
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.separator {
+  width: 100%;
+  border-bottom: 1px solid var(--separator);
+  margin: 1rem 0rem;
+}
+
+.item {
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--hover);
+    outline: none;
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
