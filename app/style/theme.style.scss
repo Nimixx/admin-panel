@@ -1,7 +1,25 @@
+// styles/theme.scss
 :root {
-    --primary-color: #2589e6;
-    --color: #161616;
-    --color-light: #fff;
-    --background: #fff;
+    // Light Theme Colors
+    --primary-color-light: #2589e6;
+    --color-light: #161616;
+    --background-light: #fff;
+  
+    // Dark Theme Colors
+    --primary-color-dark: #ff6b6b;
+    --color-dark: #fff;
     --background-dark: #161616;
-}
+  }
+  
+  [data-theme='light'] {
+    --primary-color: var(--primary-color-light);
+    --color: var(--color-light);
+    --background: var(--background-light);
+  }
+  
+  [data-theme='dark'] {
+    --primary-color: var(--primary-color-dark);
+    --color: var(--color-dark);
+    --background: var(--background-dark);
+  }
+  
