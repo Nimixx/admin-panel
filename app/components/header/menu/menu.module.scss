@@ -1,0 +1,5 @@
+@use '../../../style/mixins.style.scss' as *;
+
+.container {
+  @include flexBox(row, center, center, 2rem);
+}

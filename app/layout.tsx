@@ -1,7 +1,11 @@
 import './style/reset.style.scss'
 import './style/theme.style.scss'
+
 import type { Metadata } from 'next'
 import ThemeProvider from './context/ThemeContext'
+import Header from './components/header/Header'
+
+import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,11 +16,21 @@ type AppProps = {
   children: React.ReactNode
 }
 
+const inter = Inter({
+  weight: ['200', '400', '700', '900'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export default function RootLayout({ children }: AppProps) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className={inter.className}>
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
