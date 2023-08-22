@@ -6,7 +6,7 @@ export default function SideBar() {
   return (
     <section className={styles.container}>
       <Menu/>
-      <p>Dashboard</p>
+      <h2 className={styles.title}>Dashboard</h2>
     </section>
   )
 }
