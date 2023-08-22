@@ -1,11 +1,10 @@
+import MainNav from './MainNav'
 import styles from './menu.module.scss'
-import { Menu} from 'lucide-react'
-
 
 export default function SideBar() {
   return (
     <section className={styles.container}>
-      <Menu/>
+      <MainNav />
       <h2 className={styles.title}>Dashboard</h2>
     </section>
   )

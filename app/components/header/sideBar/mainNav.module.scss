@@ -1,0 +1,33 @@
+@use '../../../style/mixins.style.scss' as *;
+
+.profile__btn {
+  @include flexBox(row, center, center);
+  cursor: pointer;
+}
+
+.content {
+  min-width: 8rem;
+  min-height: 50vh;
+  padding-bottom: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  will-change: transform, opacity;
+  animation: slideDownAndFade 250ms ease;
+}
+
+.arrow {
+  width: 1.5rem;
+  fill: var(--background-secondary);
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

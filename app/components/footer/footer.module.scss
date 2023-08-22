@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  min-height: 5rem;
+  margin-top: auto;
+  background-color: var(--background);
+  padding: 0 2rem;
+  color: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+}

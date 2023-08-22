@@ -6,6 +6,7 @@ import ThemeProvider from './context/ThemeContext'
 import Header from './components/header/Header'
 
 import { Inter } from 'next/font/google'
+import Footer from './components/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Next.js, Sass, TypeScript, Radix Ui',
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: AppProps) {
         <ThemeProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

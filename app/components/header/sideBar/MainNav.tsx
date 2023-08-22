@@ -9,14 +9,14 @@ export default function MainNav() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild className={styles.profile__btn} aria-label="Customize options">
-        <Menu className={styles.palette} size={20} />
+        <Menu className={styles.palette} size={25} />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           data-theme={theme}
           className={styles.content}
           sideOffset={5}
-          align="end"
+          align="start"
         >
           <DropdownMenu.Arrow className={styles.arrow} />
         </DropdownMenu.Content>
