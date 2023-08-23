@@ -5,7 +5,7 @@ export default function SideBar() {
   return (
     <section className={styles.container}>
       <MainNav />
-      <h2 className={styles.title}>Dashboard</h2>
+      <h2 className={styles.title}>Cortana</h2>
     </section>
   )
 }

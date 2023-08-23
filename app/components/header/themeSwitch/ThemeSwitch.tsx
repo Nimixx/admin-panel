@@ -13,7 +13,7 @@ export default function ThemeSwitch() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild className={styles.profile__btn} aria-label="Customize options">
-        <Palette className={styles.palette} size={20} />
+        <Palette />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
@@ -25,13 +25,13 @@ export default function ThemeSwitch() {
           <DropdownMenu.RadioGroup value={theme} onValueChange={handleThemeChange}>
             <DropdownMenu.RadioItem className={styles.radio__item} value="light">
               <DropdownMenu.ItemIndicator className={styles.indicator}>
-                <Sun />
+                <Sun className={styles.icon} />
               </DropdownMenu.ItemIndicator>
               Light
             </DropdownMenu.RadioItem>
             <DropdownMenu.RadioItem className={styles.radio__item} value="dark">
               <DropdownMenu.ItemIndicator className={styles.indicator}>
-                <Moon />
+                <Moon className={styles.icon} />
               </DropdownMenu.ItemIndicator>
               Dark
             </DropdownMenu.RadioItem>

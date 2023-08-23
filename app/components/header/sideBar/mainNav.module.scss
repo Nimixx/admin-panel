@@ -7,7 +7,7 @@
 
 .content {
   min-width: 8rem;
-  min-height: 50vh;
+  min-height: 30rem;
   padding-bottom: 1rem;
   background-color: var(--background-secondary);
   border-radius: 0.5rem;
@@ -19,6 +19,46 @@
 .arrow {
   width: 1.5rem;
   fill: var(--background-secondary);
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.item {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  &:hover {
+    background-color: var(--hover);
+    outline: none;
+  }
+  &:first-child{
+    margin-top: 1rem;
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  stroke-width: 0.1rem;
 }
 
 @keyframes slideDownAndFade {

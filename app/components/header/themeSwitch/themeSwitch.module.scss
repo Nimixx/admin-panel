@@ -43,6 +43,10 @@
   fill: var(--background-secondary);
 }
 
+.icon {
+  stroke-width: 0.1rem;
+}
+
 @keyframes slideDownAndFade {
   from {
     opacity: 0;
