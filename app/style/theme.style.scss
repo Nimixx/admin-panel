@@ -1,45 +1,48 @@
-// styles/theme.scss
 :root {
-    //global
-    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  // Global
+  --shadow: 0 0.5rem 1rem #00000026;
+  --border-light: #bdbdbd;
+  --border-dark: #383838;
 
-    // Light Theme Colors
-    --primary-color-light: #339af0;
-    --color-light: #161616;
-    --color-light-secondary: #7a7a7a;
-    --background-light: #f8f9fa;
-    --background-light-secondary: #f1f3f5;
-    --hover-light: #e9ecef;
-    --separator-light: #dee2e6;
+  // Theme Colors
+  --primary-color-light: #339af0;
+  --primary-color-dark: #63e6be;
+  --color-light: #161616;
+  --color-dark: #fff;
+  --color-light-secondary: #7a7a7a;
+  --color-dark-secondary: #999;
+  --bg-light: #f8f9fa;
+  --bg-dark: #212529;
+  --bg-light-secondary: #f1f3f5;
+  --bg-dark-secondary: #343a40;
+  --bg-light-tertiary: #dfe0e1;
+  --bg-dark-tertiary: #1a1e21;
+  --hover-light: #e9ecef;
+  --hover-dark: #495057;
+  --separator: #dee2e6;
+  --separator-dark: #495057;
+}
 
+[data-theme='light'] {
+  --primary-color: var(--primary-color-light);
+  --color: var(--color-light);
+  --color-secondary: var(--color-light-secondary);
+  --background: var(--bg-light);
+  --background-secondary: var(--bg-light-secondary);
+  --background-tertiary: var(--bg-light-tertiary);
+  --hover: var(--hover-light);
+  --separator: var(--separator);
+  --border: var(--border-light);
+}
 
-    // Dark Theme Colors
-    --primary-color-dark: #63e6be;
-    --color-dark: #fff;
-    --color-dark-secondary: #999;
-    --background-dark: #212529;
-    --background-dark-secondary: #343a40;
-    --hover-dark: #495057;
-    --separator-dark: #495057;
-  }
-  
-  [data-theme='light'] {
-    --primary-color: var(--primary-color-light);
-    --color: var(--color-light);
-    --color-secondary: var(--color-light-secondary);
-    --background: var(--background-light);
-    --background-secondary: var(--background-light-secondary);
-    --hover : var(--hover-light);
-    --separator: var(--separator-light);
-  }
-  
-  [data-theme='dark'] {
-    --primary-color: var(--primary-color-dark);
-    --color: var(--color-dark);
-    --color-secondary: var(--color-dark-secondary);
-    --background: var(--background-dark);
-    --background-secondary: var(--background-dark-secondary);
-    --hover : var(--hover-dark);
-    --separator: var(--separator-dark);
-  }
-  
+[data-theme='dark'] {
+  --primary-color: var(--primary-color-dark);
+  --color: var(--color-dark);
+  --color-secondary: var(--color-dark-secondary);
+  --background: var(--bg-dark);
+  --background-secondary: var(--bg-dark-secondary);
+  --background-tertiary: var(--bg-dark-tertiary);
+  --hover: var(--hover-dark);
+  --separator: var(--separator-dark);
+  --border: var(--border-dark);
+}

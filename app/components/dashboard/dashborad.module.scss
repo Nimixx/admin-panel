@@ -8,10 +8,12 @@
 }
 
 .grid__item {
-  min-height: 30rem;
-  background-color: var(--background-secondary);
+  min-height: 25rem;
+  background-color: var(--background-tertiary);
   border-radius: 1rem;
   box-shadow: var(--shadow);
+  padding: 2rem;
+  border: 1px solid var(--border);
 }
 
 .grid__height {
