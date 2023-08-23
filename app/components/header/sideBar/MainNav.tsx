@@ -1,7 +1,18 @@
 import styles from './mainNav.module.scss'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
-import { Menu, BellDot, AreaChart, BarChart2, PieChart, CloudCog, HeartHandshake, LayoutGrid, Archive } from 'lucide-react'
+import {
+  Menu,
+  BellDot,
+  AreaChart,
+  BarChart2,
+  PieChart,
+  CloudCog,
+  HeartHandshake,
+  LayoutGrid,
+  Archive,
+} from 'lucide-react'
 import { useThemeContext } from '@/app/context/ThemeContext'
+import Link from 'next/link'
 
 export default function MainNav() {
   const { theme } = useThemeContext()
@@ -19,9 +30,11 @@ export default function MainNav() {
           align="start"
         >
           <DropdownMenu.DropdownMenuGroup className={styles.group}>
-          <DropdownMenu.Item className={styles.item}>
-              <LayoutGrid className={styles.icon} />
-            </DropdownMenu.Item>
+            <Link href="/dashboard">
+              <DropdownMenu.Item className={styles.item}>
+                <LayoutGrid className={styles.icon} />
+              </DropdownMenu.Item>
+            </Link>
             <DropdownMenu.Item className={styles.item}>
               <BellDot className={styles.icon} />
             </DropdownMenu.Item>
