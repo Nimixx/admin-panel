@@ -5,7 +5,7 @@ It is my hobby project so i work on it only in my free time.
 
 #### TechSutck
 
-- [Next.js](https://nextjs.org/))
+- [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Sass ](https://sass-lang.com/guide/ )
 
